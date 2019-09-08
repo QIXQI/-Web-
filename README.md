@@ -22,14 +22,14 @@ use test;
 
 -- 创建表 qixqi_user
 create table if not exists `qixqi_user`(
-	`id` int(11) not null auto_increment,
-  `username` varchar(100) not null unique default '',
-  `email` varchar(100) not null unique default '',
-  `password` varchar(100) not null default '',
-  `register_time` datetime not null,
-  `last_login_time` datetime not null,
-  `iconID` int(11) not null default '',
-  primary key(`id`)
+    `id` int(11) not null auto_increment,
+    `username` varchar(100) not null unique default '',
+    `email` varchar(100) not null unique default '',
+    `password` varchar(100) not null default '',
+    `register_time` datetime not null,
+    `last_login_time` datetime not null,
+    `iconID` int(11) not null default '',
+    primary key(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 default charset=utf8;
 
 -- servlet 自动创建 fileupload 表
