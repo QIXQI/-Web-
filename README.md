@@ -28,7 +28,7 @@ create table if not exists `qixqi_user`(
     `password` varchar(100) not null default '',
     `register_time` datetime not null,
     `last_login_time` datetime not null,
-    `iconID` int(11) not null default '',
+    `iconID` int(11) not null default 0,
     primary key(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 default charset=utf8;
 
